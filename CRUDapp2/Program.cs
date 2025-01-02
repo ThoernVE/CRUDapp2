@@ -171,7 +171,7 @@ internal class Program
             "2. Samsung");
         int phonetype_Id = Convert.ToInt32(Console.ReadLine()!);
 
-        if (phonetype_Id <= 0 || phonetype_Id <= 3) //returns if phonetype doesnt exist
+        if (phonetype_Id <= 0 || phonetype_Id >= 3) //returns if phonetype doesnt exist
         {
             Console.WriteLine("phonetype not found");
             return;
@@ -224,7 +224,7 @@ internal class Program
 
         Console.WriteLine("Enter a new phonetype: ");
         int phonetype_Id = Convert.ToInt32(Console.ReadLine()!);
-        if (phonetype_Id <= 0 || phonetype_Id <= 3) //returns if phonetype doesnt exist
+        if (phonetype_Id <= 0 || phonetype_Id >= 3) //returns if phonetype doesnt exist
         {
             Console.WriteLine("phonetype not found");
             return;
